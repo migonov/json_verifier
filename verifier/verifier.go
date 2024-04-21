@@ -31,10 +31,8 @@ func Verify(inputJSON []byte) bool {
 	statements := policy.PolicyDocument.Statements
 
 	for _, statement := range statements {
-		if statement.Resource != nil {
-			if containsAsterisk(statement.Resource.Values) {
-				return false
-			}
+		if statement.Resource != nil && containsAsterisk(statement.Resource.Values) {
+			return false
 		}
 	}
 
