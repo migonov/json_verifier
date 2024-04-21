@@ -26,7 +26,7 @@ in the main directory.
 
 ### Verifier package
 
-Verifier package contains the main function **Verifier(inputJSON []byte)** which is the subject of the task.
+Verifier package contains the main function **Verify(inputJSON []byte)** which is the subject of the task.
 
 ### Utils package
 
